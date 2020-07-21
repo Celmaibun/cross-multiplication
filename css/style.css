@@ -66,6 +66,14 @@ body {
 }
 
 .text-wrapper__button {
+  margin: 5px;
+  width: 200px;
+  border: none;
+  height: 50px;
+  font-size: 25px;
+}
+
+.text-wrapper__button-remove {
   width: 200px;
   border: none;
   height: 50px;

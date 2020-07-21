@@ -41,6 +41,13 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     &__button{
+        margin: 5px;
+        width: 200px;
+        border: none;
+        height: 50px;
+        font-size: 25px;
+    }
+    &__button-remove{
         width: 200px;
         border: none;
         height: 50px;

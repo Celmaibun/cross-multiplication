@@ -2,19 +2,20 @@ const d2 = document.querySelector('.d-2');
 const d3 = document.querySelector('.d-3');
 const d4 = document.querySelector('.d-4');
 const calculate = document.querySelector('.text-wrapper__button');
+const remove = document.querySelector('.text-wrapper__button-remove');
 const text = document.querySelector('.text-wrapper__text');
 const text1 = document.querySelector('.text-wrapper__text1');
 
 const alld = document.querySelectorAll('.lm');
 
+let result;
+let result1;
 
 function calculateCross() {
 
 
     let dValues = [];
     let leftSide, rightSide;
-    let result;
-    let result1;
 
     for(let i = 0; i < alld.length; i++){
         if(alld[i].value === 'x'){
@@ -40,3 +41,11 @@ function calculateCross() {
 
 
 calculate.addEventListener('click', calculateCross)
+remove.addEventListener('click', function(){
+    alld.forEach(item =>{
+        item.value = '';
+    })
+    text.textContent = '';
+    text1.textContent = '';
+
+})
