@@ -29,13 +29,12 @@ function calculateCross() {
     result = rightSide / leftSide;
     result1 = leftSide / rightSide;
 
-    console.log(leftSide);
-    console.log(rightSide)
-    console.log(dValues)
-    console.log(result)
-
-    text.textContent = `X = ${result}`;
-    text1.textContent = `X = ${result1}`;
+    if(result > 1){
+        text.textContent = `X = ${result}`;
+    }
+    if(result1 > 1){
+        text1.textContent = `X = ${result1}`;
+    }
 }
 
 
